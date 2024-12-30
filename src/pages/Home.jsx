@@ -15,6 +15,17 @@ export function HomePage(){
 
     }
 
+    function handler3(){
+        nav("/contact")
+
+    }
+
+    function handler4(){
+      nav("/solver")
+    }
+    function handler5(){
+      nav("/scraper")
+    }
 
     return (
       <div className="h-screen flex justify-center items-center">
@@ -22,6 +33,9 @@ export function HomePage(){
           <h1 className="font-semibold text-xl">Main Menu</h1>
           <CustomBtn label="Temp App" onClick={handler1} />
           <CustomBtn label="Game App" onClick={handler2} />
+          <CustomBtn label="Contact App" onClick={handler3} />
+          <CustomBtn label="Sudoku Solver App" onClick={handler4} />
+          <CustomBtn label="Webscraper App" onClick={handler5} />
         </div>
       </div>
     );
